@@ -1,4 +1,7 @@
 package com.example.app4a
 
-class appViewModel {
+import androidx.lifecycle.ViewModel
+
+class appViewModel : ViewModel() {
+
 }
