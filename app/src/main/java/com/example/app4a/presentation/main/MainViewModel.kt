@@ -20,7 +20,7 @@ class MainViewModel(
 
     fun onClickInc(emailUser : String) {
         viewModelScope.launch {
-            createUUC.invoke(User(emailUser))
+            createUUC.invoke(User("test"))
         }
 
         livedatatest.value = (livedatatest.value ?: 0) +1 // "livedatatest?.value ?: 0" marche aussi
