@@ -6,7 +6,7 @@ import com.example.app4a.domain.entities.User
 class GetUserUseCase(
     private val userRepo : UserRepo
 ) {
-    suspend fun invoke(email : String) : User? {
-        return userRepo.getUser(email)
+    suspend fun invoke(email : String, password : String) : User? {
+        return userRepo.getUser(email,password)
     }
 }
