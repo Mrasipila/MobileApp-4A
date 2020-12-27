@@ -74,5 +74,17 @@
 
     </com.google.android.material.button.MaterialButton>
 
+    <TextView
+        android:id="@+id/password_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_input_layout"
+        android:textSize="12dp"
+        android:textColor="@color/red"
+        android:text="The password must contain minimum 8 characters, at least 1 letter and 1 number:"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
