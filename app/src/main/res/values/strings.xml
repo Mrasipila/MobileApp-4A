@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">App4A</string>
+    <string name="valid_password">Valid Password</string>
+    <string name="valid_mail_address">Valid Mail Address</string>
+    <string name="sign_in">Sign In</string>
+    <string name="vide">Vide</string>
+    <string name="pw_error_message"><![CDATA[The password must contain minimum 8 characters, at least 1 letter and 1 number, no special characters : &é)^]]></string>
+    <string name="email_not_valid">Email not valid</string>
 </resources>
