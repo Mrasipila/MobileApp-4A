@@ -20,7 +20,6 @@ class MainViewModel(
 
 
     fun onClickedLogin(emailUser: String, password: String) {
-
         viewModelScope.launch(Dispatchers.IO) {
             val user : User? = getUserUseCase.invoke(emailUser)
             val loginStatus : LoginStatus = if(user != null) {
