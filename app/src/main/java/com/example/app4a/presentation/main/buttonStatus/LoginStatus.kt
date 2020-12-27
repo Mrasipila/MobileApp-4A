@@ -1,4 +1,4 @@
-package com.example.app4a.presentation.main
+package com.example.app4a.presentation.main.buttonStatus
 
 sealed class LoginStatus
 
