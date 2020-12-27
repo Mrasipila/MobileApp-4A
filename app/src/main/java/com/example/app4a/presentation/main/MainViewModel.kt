@@ -7,28 +7,30 @@ import com.example.app4a.domain.entities.User
 import com.example.app4a.domain.useCases.CreateUserUseCase
 import com.example.app4a.domain.useCases.GetUserUseCase
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class MainViewModel(
     private val createUUC : CreateUserUseCase,
     private val getUserUseCase: GetUserUseCase
 ) : ViewModel() {
 
-    val livedatatest : MutableLiveData<Int> = MutableLiveData()
+    val loginLiveData : MutableLiveData<LoginStatus> = MutableLiveData();
 
-    init {
-        livedatatest.value = 0
-    }
 
-    fun onClickInc(emailUser : String) {
+
+    fun onClickedLogin(emailUser: String, password: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            createUUC.invoke(User("test"))
-            val user : User = getUserUseCase.invoke("test")
-            val debug = "debug"
-        }
+            val user : User? = getUserUseCase.invoke(emailUser)
+            val loginStatus : LoginStatus = if(user != null) {
+                LoginSuccess(user.email)
+            } else {
+                LoginError
+            }
 
-        livedatatest.value = (livedatatest.value ?: 0) +1 // "livedatatest?.value ?: 0" marche aussi
+            withContext(Dispatchers.Main) {
+                loginLiveData.value = loginStatus
+            }
+        }
     }
 }
