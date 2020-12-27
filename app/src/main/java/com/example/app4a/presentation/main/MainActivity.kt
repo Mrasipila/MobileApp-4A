@@ -2,9 +2,10 @@ package com.example.app4a.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextWatcher
 import androidx.lifecycle.Observer
-import androidx.lifecycle.observe
 import com.example.app4a.R
+import com.example.app4a.presentation.textWatcher.LoginTW
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
                     .show()
             }
         })
+
+        val textWatcher : TextWatcher = LoginTW(login_edit.text)
+        login_edit.setError("You ")
+        login_edit.addTextChangedListener(textWatcher);
+
         login_button.setOnClickListener{
             mainViewModel.onClickedLogin(login_edit.text.toString().trim(),password_edit.text.toString().trim())
         }

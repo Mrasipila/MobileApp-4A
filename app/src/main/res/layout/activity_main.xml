@@ -23,6 +23,8 @@
             android:id="@+id/login_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxLength="30"
+            android:hint="Mail Address"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
