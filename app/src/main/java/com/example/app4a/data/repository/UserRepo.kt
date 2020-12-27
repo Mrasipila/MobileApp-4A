@@ -10,8 +10,8 @@ class UserRepo(private val databaseDao: DatabaseDao) {
         databaseDao.insert(user.toData())
     }
 
-    fun getUser(email: String) : User? {
-        val userLocal = databaseDao.findByName(email)
+    fun getUser(email: String, password : String) : User? {
+        val userLocal = databaseDao.findByName(email,password)
         return userLocal?.toEntity()
     }
 }

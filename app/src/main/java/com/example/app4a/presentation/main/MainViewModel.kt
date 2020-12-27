@@ -15,13 +15,16 @@ class MainViewModel(
     private val getUserUseCase: GetUserUseCase
 ) : ViewModel() {
 
+    //val conditionPassword : MutableLiveData<String> = MutableLiveData();
     val loginLiveData : MutableLiveData<LoginStatus> = MutableLiveData();
 
-
+ //   init {
+   //     conditionPassword.value = ""
+    //}
 
     fun onClickedLogin(emailUser: String, password: String) {
         viewModelScope.launch(Dispatchers.IO) {
-            val user : User? = getUserUseCase.invoke(emailUser)
+            val user : User? = getUserUseCase.invoke(emailUser,password)
             val loginStatus : LoginStatus = if(user != null) {
                 LoginSuccess(user.email)
             } else {
