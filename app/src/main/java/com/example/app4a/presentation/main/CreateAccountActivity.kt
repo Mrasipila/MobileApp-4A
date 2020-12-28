@@ -29,7 +29,7 @@ class CreateAccountActivity : AppCompatActivity() {
                     MaterialAlertDialogBuilder(this)
                         .setTitle("Account Created")
                         .setMessage("Your Account Has Been Created, Please Login")
-                        .setPositiveButton("Ok") { dialog, which ->
+                        .setPositiveButton("Ok") { dialog, _ ->
                             dialog.dismiss()
                         }
                         .show()
@@ -42,7 +42,7 @@ class CreateAccountActivity : AppCompatActivity() {
         })
 
         // Get the Intent that started this activity and extract the string
-        val message = intent.getStringExtra(EXTRA_MESSAGE)
+        // val message = intent.getStringExtra(EXTRA_MESSAGE)
 
         sign_in_button.setOnClickListener{
             mainViewModel.onClickedSignIn(Email_CAA_edit.text.toString().trim(),Password_CAA_edit.text.toString().trim())

@@ -5,5 +5,6 @@
     <string name="sign_in">Sign In</string>
     <string name="vide">Vide</string>
     <string name="pw_error_message"><![CDATA[The password must contain minimum 8 characters, at least 1 letter and 1 number, no special characters : &é)^]]></string>
+    <string name="login_button_error_message"><![CDATA[Invalid Password or Email]]></string>
     <string name="email_not_valid">Email not valid</string>
 </resources>
