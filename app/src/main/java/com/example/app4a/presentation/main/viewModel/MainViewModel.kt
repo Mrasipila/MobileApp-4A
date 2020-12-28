@@ -1,4 +1,4 @@
-package com.example.app4a.presentation.main
+package com.example.app4a.presentation.main.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -8,7 +8,6 @@ import com.example.app4a.domain.useCases.CreateUserUseCase
 import com.example.app4a.domain.useCases.GetAllUserUseCase
 import com.example.app4a.domain.useCases.GetUserUseCase
 import com.example.app4a.presentation.main.buttonStatus.*
-import kotlinx.android.synthetic.main.activity_create_account.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

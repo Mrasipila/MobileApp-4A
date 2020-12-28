@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="60dp"
-    tools:context=".presentation.main.CreateAccountActivity">
+    tools:context=".presentation.main.ui.CreateAccountActivity">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Email_CAA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Your Mail Address"
+        android:hint="@string/enter_your_mail_address"
         app:layout_constraintBottom_toTopOf="@+id/Password_CAA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:id="@+id/Password_CAA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Your Password"
+        android:hint="@string/enter_your_password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -7,4 +7,7 @@
     <string name="pw_error_message"><![CDATA[The password must contain minimum 8 characters, at least 1 letter and 1 number, no special characters : &é)^]]></string>
     <string name="login_button_error_message"><![CDATA[Invalid Password or Email]]></string>
     <string name="email_not_valid">Email not valid</string>
+    <string name="enter_your_mail_address">Enter Your Mail Address</string>
+    <string name="enter_your_password">Enter Your Password</string>
+    <string name="crypto_image">crypto_image</string>
 </resources>

@@ -1,8 +1,9 @@
-package com.example.app4a.presentation.main
+package com.example.app4a.presentation.main.ui.activityList
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.app4a.R
+
 
 class AppListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app4a">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:name=".injection.appApplication"
@@ -11,12 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App4A">
         <activity
-            android:name=".presentation.main.AppListActivity"
-            android:parentActivityName=".presentation.main.MainActivity" />
+            android:name=".presentation.main.ui.activityList.AppListActivity"
+            android:parentActivityName=".presentation.main.ui.MainActivity" />
         <activity
-            android:name=".presentation.main.CreateAccountActivity"
-            android:parentActivityName=".presentation.main.MainActivity" />
-        <activity android:name=".presentation.main.MainActivity">
+            android:name=".presentation.main.ui.CreateAccountActivity"
+            android:parentActivityName=".presentation.main.ui.MainActivity" />
+        <activity android:name=".presentation.main.ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,18 +1,16 @@
-package com.example.app4a.presentation.main
+package com.example.app4a.presentation.main.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.example.app4a.R
 import com.example.app4a.presentation.main.buttonStatus.LoginError
 import com.example.app4a.presentation.main.buttonStatus.LoginSuccess
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import kotlinx.android.synthetic.main.activity_create_account.*
+import com.example.app4a.presentation.main.ui.activityList.AppListActivity
+import com.example.app4a.presentation.main.viewModel.MainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 

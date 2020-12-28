@@ -8,7 +8,7 @@ import com.example.app4a.data.repository.UserRepo
 import com.example.app4a.domain.useCases.CreateUserUseCase
 import com.example.app4a.domain.useCases.GetAllUserUseCase
 import com.example.app4a.domain.useCases.GetUserUseCase
-import com.example.app4a.presentation.main.MainViewModel
+import com.example.app4a.presentation.main.viewModel.MainViewModel
 import org.koin.android.ext.koin.androidContext
 import org.koin.dsl.module
 
