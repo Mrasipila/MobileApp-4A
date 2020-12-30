@@ -23,7 +23,7 @@ Once Connected         |  On Click          |  On Click
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/5.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/6.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/7.PNG" width="300" height="600">
 
-Keyboard Handling                   
+Keyboard Handling         |           Keyboard Handling  
 :-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/9.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/10.PNG" width="300" height="600">
 
