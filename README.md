@@ -30,7 +30,7 @@ Keyboard Handling         |           Keyboard Handling
   
 ## `VCS Tree in the End`
 <p align="center">
-  <img width="300" height="345" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
+  <img width="400" height="445" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
 </p>
 
 
