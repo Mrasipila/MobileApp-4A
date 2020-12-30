@@ -8,7 +8,10 @@ Clean Architecture
 API call  
 Database management  
 
-![alt text](https://github.com/Mrasipila/tp-architecture/blob/IA1-Befa-Airlines/IA1-Befa-Airlines/projet/images/dev.PNG)
+![alt text]()
+<p align="center">
+  <img width="460" height="300" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG">
+</p>
 
 ## Built With
 
