@@ -10,7 +10,7 @@ cryptomonnaies en temps réelle.
 
 LogIn            |  SignIn          |  Email/Password not found in database        |  SignIn not valid / Already exist
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
-<img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG" width="300" height="600"> |  <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/4.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/3.PNG" width="300" height="600">
+<img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG" width="300" height="550"> |  <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/4.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/3.PNG" width="300" height="550">
 
 Once Connected         |  On Click          |  On Clic       
 :-------------------------:|:-------------------------:|:-------------------------:
