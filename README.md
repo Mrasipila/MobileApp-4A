@@ -9,7 +9,7 @@ Mot de passe : **Admin123**
   
     
      
-# Le projet respecte les principe et utile :  
+# Le projet respecte les principe et utilise :  
 **1. Architecture MVVM**  
 **2. Clean Architecture**  
 **3. API call**  
@@ -19,7 +19,7 @@ LogIn            |  SignIn          |  Email/Password not found in database     
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG" width="300" height="550"> |  <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/4.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/3.PNG" width="300" height="550">
 
-Once Connected         |  On Click          |  On Clic       
+Once Connected         |  On Click          |  On Click       
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/5.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/6.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/7.PNG" width="300" height="600">
 
