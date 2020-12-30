@@ -1,7 +1,8 @@
 # Cryptocurrency Fetcher Mobile App - Project
 
 Voici une application mobile avec une interface de connection, création de compte qui permet de voir les valeurs des index de différentes  
-cryptomonnaies en temps réelle. 
+cryptomonnaies en temps réelle. Une fois connecté on a accès à une liste de cryptomonnaie, en appuyant sur un des éléments de cette liste,  
+on a accès à encore plus d'information concernant la monnaie.  
 
 L'utilisateur de base avec lequelle vous pouvez vous connecter à l'appli est :  
 Email : **admin@admin.ad**  
