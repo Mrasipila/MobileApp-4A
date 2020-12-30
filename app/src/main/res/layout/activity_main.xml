@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
+    android:padding="40dp"
     tools:context=".presentation.main.ui.MainActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -23,6 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="30"
+            android:layout_marginBottom="45dp"
             android:hint="@string/mail_address"
             />
 
@@ -38,12 +39,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@+id/login_button"
         >
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password_edit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            />
+            android:inputType="textPassword" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,5 +89,21 @@
         app:layout_constraintTop_toTopOf="parent"
         android:visibility="invisible"
         app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/login_page"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_input_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

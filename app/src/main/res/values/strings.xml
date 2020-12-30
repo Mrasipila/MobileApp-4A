@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App4A</string>
+    <string name="app_name">CryptoCurrency Application</string>
     <string name="valid_password">Valid Password</string>
     <string name="valid_mail_address">Valid Mail Address</string>
     <string name="sign_in">Sign In</string>
@@ -27,4 +27,5 @@
     <string name="mail_address">Mail Address</string>
     <string name="login">Login</string>
     <string name="create_account">Create Account</string>
+    <string name="login_page">Login Page</string>
 </resources>
