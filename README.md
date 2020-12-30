@@ -22,11 +22,12 @@ LogIn            |  SignIn          |  Email/Password not found in database     
 Once Connected         |  On Click          |  On Click       
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/5.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/6.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/7.PNG" width="300" height="600">
-
+<p align="center">
 Keyboard Handling         |           Keyboard Handling  
 :-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/9.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/10.PNG" width="300" height="600">
-
+</p>
+  
 ## `VCS Tree in the End`
 <p align="center">
   <img width="300" height="345" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
