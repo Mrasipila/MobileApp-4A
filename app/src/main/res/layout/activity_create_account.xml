@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="60dp"
+    android:background="#996af8f4"
     tools:context=".presentation.main.ui.CreateAccountActivity">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -46,8 +47,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="@string/valid_mail_address"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/black"
         android:textStyle="bold"
+        android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/Email_CAA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.005"
@@ -60,7 +62,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/valid_password"
-        android:textColor="@color/teal_700"
+        android:textColor="@color/black"
+        android:textSize="17sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Password_CAA"
         app:layout_constraintEnd_toEndOf="parent"
