@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="145dp"
+    android:paddingBottom="40dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context=".presentation.main.ui.activityList.fragment.ItemDetailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/customborder"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView_Fragment"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        tools:src="@tools:sample/avatars"
+        android:contentDescription="@string/imagecryptocurr" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:translationX="140dp"
+        android:translationY="18dp" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        android:textSize="18sp"
+        android:translationX="150dp"
+        android:translationY="60dp" />
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview"
+        android:textSize="18sp"
+        android:translationX="150dp"
+        android:translationY="90dp" />
+
+    <TextView
+        android:id="@+id/trustscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trust_score"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:translationX="25dp"
+        android:translationY="140dp" />
+
+    <TextView
+        android:id="@+id/trading_incentive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/trading_incentive"
+        android:textSize="18sp"
+        android:translationX="25dp"
+        android:translationY="180dp" />
+
+    <TextView
+        android:id="@+id/trade24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/trade_volume_24h_btc"
+        android:textSize="18sp"
+        android:translationX="25dp"
+        android:translationY="220dp" />
+
+    <TextView
+        android:id="@+id/trade24n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="@string/trade_volume_24h_btc_normalized"
+        android:textSize="18sp"
+        android:translationX="25dp"
+        android:translationY="290dp" />
+
+    <TextView
+        android:id="@+id/trustscore_editFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textSize="18sp"
+        android:translationX="125dp"
+        android:translationY="140dp" />
+
+    <TextView
+        android:id="@+id/trading_incentive_editFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textSize="18sp"
+        android:translationX="180dp"
+        android:translationY="180dp" />
+
+    <TextView
+        android:id="@+id/trade24_editFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textSize="18sp"
+        android:translationX="25dp"
+        android:translationY="255dp" />
+
+    <TextView
+        android:id="@+id/trade24n_editFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/value"
+        android:textSize="18sp"
+        android:translationX="25dp"
+        android:translationY="330dp" />
+
+
+</FrameLayout>

@@ -1,26 +1,40 @@
-package com.example.app4a.presentation.main
+package com.example.app4a.presentation.main.viewModel
 
+import android.renderscript.Sampler
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.app4a.domain.entities.Currency
 import com.example.app4a.domain.entities.User
 import com.example.app4a.domain.useCases.CreateUserUseCase
 import com.example.app4a.domain.useCases.GetAllUserUseCase
+import com.example.app4a.domain.useCases.GetCurrencyUseCase
 import com.example.app4a.domain.useCases.GetUserUseCase
 import com.example.app4a.presentation.main.buttonStatus.*
-import kotlinx.android.synthetic.main.activity_create_account.*
+import com.example.app4a.presentation.main.ui.activityList.AppListActivity
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainViewModel(
     private val createUUC : CreateUserUseCase,
     private val getUserUseCase: GetUserUseCase,
-    private val getAllUserUseCase: GetAllUserUseCase
+    private val getAllUserUseCase: GetAllUserUseCase,
+    private val getCurrencyUseCase: GetCurrencyUseCase
 ) : ViewModel() {
 
     val loginLiveData : MutableLiveData<LoginStatus> = MutableLiveData();
     val signInLiveData : MutableLiveData<SignInStatus> = MutableLiveData();
+    val ApiLiveData : MutableLiveData<ApiStatus> = MutableLiveData();
+    //var temporel : List<Currency>? = null
+
+
+    fun fetchDataForAdapter(callback: Callback<List<Currency>>) {
+        getCurrencyUseCase.invoke(callback)
+    }
 
     fun onClickedLogin(emailUser: String, password: String) {
         viewModelScope.launch(Dispatchers.IO) {

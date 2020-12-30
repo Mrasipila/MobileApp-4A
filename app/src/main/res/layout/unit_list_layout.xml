@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:padding="6dip" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="78dp"
+        android:layout_height="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="6dip"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/crypto_image"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/icon"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/country"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/secondLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/firstLine"
+        android:layout_alignParentBottom="true"
+
+        android:layout_toEndOf="@+id/country_edit"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="@string/score"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/secondLine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/icon"
+        android:gravity="center_vertical"
+        android:text="@string/titre"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/country_edit"
+        android:layout_width="171dp"
+        android:layout_height="28dp"
+        android:layout_below="@+id/firstLine"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/secondLine"
+        android:text="@string/text" />
+
+    <TextView
+        android:id="@+id/trust_score_edit"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/firstLine"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="3dp"
+        android:layout_toEndOf="@+id/secondLine2"
+        android:text="@string/text" />
+
+</RelativeLayout>

@@ -1,18 +1,17 @@
-package com.example.app4a.presentation.main
+package com.example.app4a.presentation.main.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import com.example.app4a.R
-import android.widget.TextView
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.example.app4a.presentation.main.buttonStatus.SignInError
 import com.example.app4a.presentation.main.buttonStatus.SignInSuccess
+import com.example.app4a.presentation.main.viewModel.MainViewModel
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_create_account.*
-import kotlinx.android.synthetic.main.activity_main.*
 import org.koin.android.ext.android.inject
 
 class CreateAccountActivity : AppCompatActivity() {
@@ -29,7 +28,7 @@ class CreateAccountActivity : AppCompatActivity() {
                     MaterialAlertDialogBuilder(this)
                         .setTitle("Account Created")
                         .setMessage("Your Account Has Been Created, Please Login")
-                        .setPositiveButton("Ok") { dialog, which ->
+                        .setPositiveButton("Ok") { dialog, _ ->
                             dialog.dismiss()
                         }
                         .show()
@@ -42,12 +41,11 @@ class CreateAccountActivity : AppCompatActivity() {
         })
 
         // Get the Intent that started this activity and extract the string
-        val message = intent.getStringExtra(EXTRA_MESSAGE)
+        // val message = intent.getStringExtra(EXTRA_MESSAGE)
 
         sign_in_button.setOnClickListener{
             mainViewModel.onClickedSignIn(Email_CAA_edit.text.toString().trim(),Password_CAA_edit.text.toString().trim())
         }
-
 
         Email_CAA_edit.addTextChangedListener(SignInTextWatcher);
         Password_CAA_edit.addTextChangedListener(SignInTextWatcher);
