@@ -44,12 +44,12 @@ Once Connected         |  On Click          |  On Click
 
 J'ai utilisé [Github](https://github.com/) pour le versioning. Pour voir les différentes branches et versions [cliquez sur ce repertoire](https://github.com/Mrasipila/MobileApp-4A/branches). 
 
-## Authors
+## Author
 
 * **KANZARI Meyssan** 
 
 
-## Acknowledgments
+## Acknowledgment
 
 vincent Etienne
 
