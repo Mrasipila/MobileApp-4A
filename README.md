@@ -16,9 +16,13 @@ Once Connected         |  On Click          |  On Clic
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/5.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/6.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/7.PNG" width="300" height="600">
 
-VCS at the End 
+<p align="center">
+  ## VCS in the End
+</p>
+<p align="center">
+  <img align="right" width="300" height="345" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
+</p>
 
-<img align="right" width="300" height="345" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
 
 ## Built With
 
