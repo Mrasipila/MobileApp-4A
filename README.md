@@ -10,7 +10,7 @@ Database management
 
 Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-<img https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG) width="200" height="400"> |  ![](https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG)
+<img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG" width="200" height="400"> |  ![](https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG)
 
 ## Built With
 
