@@ -3,7 +3,12 @@
 Voici une application mobile avec une interface de connection, création de compte qui permet de voir les valeurs des index de différentes  
 cryptomonnaies en temps réelle. 
 
+Architecture MVVM  
+Clean Architecture  
+API call  
+Database management  
 
+![alt text](https://github.com/Mrasipila/tp-architecture/blob/IA1-Befa-Airlines/IA1-Befa-Airlines/projet/images/dev.PNG)
 
 ## Built With
 
