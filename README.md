@@ -7,6 +7,9 @@ L'utilisateur de base avec lequelle vous pouvez vous connecter à l'appli est :
 Email : **admin@admin.ad**  
 Mot de passe : **Admin123**  
   
+    
+     
+# Le projet respecte les principe et utile :  
 **1. Architecture MVVM**  
 **2. Clean Architecture**  
 **3. API call**  
