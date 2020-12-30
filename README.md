@@ -3,10 +3,10 @@
 Voici une application mobile avec une interface de connection, création de compte qui permet de voir les valeurs des index de différentes  
 cryptomonnaies en temps réelle. 
 
-L'utilisateur de base avec lequelle vous pouvez vous connecter à l'appli est :
-Email : **admin@admin.ad**
-Mot de passe : **Admin123**
-
+L'utilisateur de base avec lequelle vous pouvez vous connecter à l'appli est :  
+Email : **admin@admin.ad**  
+Mot de passe : **Admin123**  
+  
 **1. Architecture MVVM**  
 **2. Clean Architecture**  
 **3. API call**  
