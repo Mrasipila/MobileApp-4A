@@ -25,6 +25,7 @@ Once Connected         |  On Click          |  On Click
 
 Keyboard Handling         |           Keyboard Handling  
 :-------------------------:|:-------------------------:
+<img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/9.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/10.PNG" width="300" height="550">
 
   
 ## `VCS Tree in the End`
