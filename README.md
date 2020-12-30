@@ -2,7 +2,7 @@
 
 Voici une application mobile avec une interface de connection, création de compte qui permet de voir les valeurs des index de différentes  
 cryptomonnaies en temps réelle. L'application offre une interface de connexion et de création de compte. Une fois connecté on a accès à une  
-liste de cryptomonnaie, en appuyant sur un des éléments de cette liste, on a accès à encore plus d'information concernant la monnaie.  
+liste de cryptomonnaie, en appuyant sur un des éléments de cette liste, on nous donne encore plus d'information concernant la monnaie.  
 
 L'utilisateur de base avec lequelle vous pouvez vous connecter à l'appli est :  
 Email : **admin@admin.ad**  
