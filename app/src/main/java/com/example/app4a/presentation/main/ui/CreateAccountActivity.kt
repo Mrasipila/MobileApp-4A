@@ -27,7 +27,7 @@ class CreateAccountActivity : AppCompatActivity() {
                 is SignInSuccess -> {
                     MaterialAlertDialogBuilder(this)
                         .setTitle("Account Created")
-                        .setMessage("Your Account Has Been Created, Please Login")
+                        .setMessage("Your Account Has Been Created, Please Login") /* ${it.allUsers}*/
                         .setPositiveButton("Ok") { dialog, _ ->
                             dialog.dismiss()
                         }

@@ -56,15 +56,12 @@ class MainViewModel(
         val regex0 = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}\$".toRegex()
         val regex = "[a-zA-Z0-9]{1,16}@[a-zA-Z0-9]{4,8}.[a-zA-Z]{2,3}".toRegex()
         val user: User = User(emailUser, password)
-        if (regex.matches(emailUser) && regex0.matches(password)) {
-            viewModelScope.launch(Dispatchers.IO) {
-                createUUC.invoke(user)
-            }
-        }
 
         viewModelScope.launch(Dispatchers.Default) {
+            val us = getUserUseCase.invoke(emailUser,password)
             val au = getAllUserUseCase.invoke(user)
-            val signInStatus: SignInStatus = if (regex.matches(emailUser) && regex0.matches(password)) {
+            val signInStatus: SignInStatus = if (regex.matches(emailUser) && regex0.matches(password) && us==null) {
+                createUUC.invoke(user)
                 SignInSuccess(emailUser,au)
             } else {
                 SignInError

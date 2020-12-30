@@ -10,7 +10,7 @@ import com.example.app4a.domain.entities.User
 class CreateUserUseCase(
     private val userRepo : UserRepo
 ) {
-    suspend fun invoke(user : User){
+    suspend fun invoke(user : User) {
         userRepo.createUser(user)
     }
 }

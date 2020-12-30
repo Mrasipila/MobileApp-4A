@@ -9,4 +9,8 @@ class GetAllUserUseCase(
         suspend fun invoke(user : User): String {
             return userRepo.getAllUser(user)
         }
+
+        suspend fun invokeNuke(){
+            userRepo.deleteAllUser()
+        }
 }

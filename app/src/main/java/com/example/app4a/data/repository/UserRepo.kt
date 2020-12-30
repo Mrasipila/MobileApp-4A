@@ -7,7 +7,7 @@ import com.example.app4a.domain.entities.User
 
 class UserRepo(private val databaseDao: DatabaseDao) {
 
-    suspend fun createUser(user: User){
+    suspend fun createUser(user: User) {
         databaseDao.insert(user.toData())
     }
 
@@ -25,5 +25,9 @@ class UserRepo(private val databaseDao: DatabaseDao) {
             builder.append(tmp.email + " | " + tmp.password)
         }
         return builder.toString().trim()
+    }
+
+    suspend fun deleteAllUser(){
+        databaseDao.nukeTable()
     }
 }

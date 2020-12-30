@@ -12,8 +12,8 @@ interface DatabaseDao {
     fun getAll(): List<UserLocal>
 
 
-    @Query("SELECT * FROM userlocal WHERE email LIKE :email AND password LIKE :password LIMIT 1")
-    fun findByName(email: String, password : String): UserLocal?
+    @Query("SELECT * FROM userlocal WHERE email = :email AND password = :password LIMIT 1")
+    fun findByName(email: String, password: String): UserLocal?
 
     @Insert
     fun insert(user: UserLocal)
@@ -21,4 +21,6 @@ interface DatabaseDao {
     @Delete
     fun delete(user: UserLocal)
 
+    @Query("DELETE FROM userlocal")
+    fun nukeTable()
 }
