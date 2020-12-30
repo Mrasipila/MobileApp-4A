@@ -9,7 +9,7 @@ Mot de passe : **Admin123**
   
     
      
-# Le projet respecte les principe et utilise :  
+# Le projet respecte les principes et utilise :  
 **1. Architecture MVVM**  
 **2. Clean Architecture**  
 **3. API call**  
