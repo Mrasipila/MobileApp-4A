@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:maxLength="30"
-            android:hint="Mail Address"
+            android:hint="@string/mail_address"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -32,7 +32,7 @@
         android:id="@+id/password_input_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/password"
         app:layout_constraintTop_toBottomOf="@+id/login_input_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -56,7 +56,7 @@
         app:layout_constraintStart_toStartOf="@id/create_account_button"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginTop="40dp"
-        android:text="Login"
+        android:text="@string/login"
         >
 
     </com.google.android.material.button.MaterialButton>
@@ -68,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@id/login_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="Create Account"
+        android:text="@string/create_account"
         android:onClick="goToCreateAccountPage"
         >
 

@@ -55,19 +55,16 @@ class ItemDetailFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val inf : View = inflater.inflate(R.layout.fragment_item_detail, container, false)
-        val g : Gson = GsonBuilder()
-            .setLenient()
-            .create()
-        var t : String = "{"+curr?.substring( 9, (curr?.length ?: 0) - 1 )+"}"
 
-        val u : String = t.replace(" ", "").replace("{", "{'")
-            .replace("=", "'='")
-            .replace(",", "','")
-            .replace("}", "'}").trim()
-        println(u)
-        val s : FormatterCurr = g.fromJson(u,FormatterCurr::class.java)
+        val t : String = "{"+curr?.substring( 9, (curr?.length ?: 0) - 1 )+"}"
+        val list = t.split(",") as MutableList<String>
+        var i = list.size-11
+        while(i!=0){
+            list.removeAt(5)
+            i--
+        }
 
         val tv0 = inf.findViewById<View>(R.id.name) as TextView
         val tv1 = inf.findViewById<View>(R.id.year) as TextView
@@ -78,14 +75,14 @@ class ItemDetailFragment : Fragment() {
         val tv6 = inf.findViewById<View>(R.id.trade24n_editFragment) as TextView
         val iv0 = inf.findViewById<View>(R.id.imageView_Fragment) as ImageView
 
-        tv0.text = s.name
-        tv1.text = s.year_established
-        tv2.text = s.country
-        tv3.text = s.trust_score
-        tv4.text = s.has_trading_incentive
-        tv5.text = s.trade_volume_24h_btc
-        tv6.text = s.trade_volume_24h_btc_normalized
-        Glide.with(iv0.context).load(s.image).into(iv0);
+        tv0.text=list.get(1).replace(" name=","")
+        tv2.text=list.get(3).replace(" country=","")
+        tv1.text=list.get(2).replace( " year_established=","")
+        tv3.text=list.get(7).replace( " trust_score=","")
+        tv4.text=list.get(6).replace( " has_trading_incentive=","")
+        tv5.text=list.get(9).replace( " trade_volume_24h_btc=","")
+        tv6.text=list.get(10).replace( " trade_volume_24h_btc_normalized=","")
+        Glide.with(iv0.context).load(list.get(5).replace( " image=","")).into(iv0)
         return inf
     }
 
@@ -95,12 +92,11 @@ class ItemDetailFragment : Fragment() {
          * this fragment using the provided parameters.
          *
          * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
          * @return A new instance of fragment ItemDetailFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
-        fun newInstance(param1: String, param2: String) =
+        fun newInstance(param1: String) =
             ItemDetailFragment().apply {
                 arguments = Bundle().apply {
                     putString(currency, param1)

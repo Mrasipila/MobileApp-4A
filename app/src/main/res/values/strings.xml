@@ -23,4 +23,8 @@
     <string name="trade_volume_24h_btc">trade_volume_24h_btc :</string>
     <string name="trade_volume_24h_btc_normalized">trade_volume_24h_btc_normalized :</string>
     <string name="value">VALUE</string>
+    <string name="password">Password</string>
+    <string name="mail_address">Mail Address</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
 </resources>
