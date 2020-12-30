@@ -19,7 +19,7 @@ Once Connected         |  On Click          |  On Clic
 
 ## `VCS Tree in the End`
 <p align="center">
-  <img align="right" width="300" height="345" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
+  <img width="300" height="345" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/8.PNG">
 </p>
 
 
