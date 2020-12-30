@@ -8,7 +8,7 @@ Clean Architecture
 API call  
 Database management  
 
-LogIn            |  SignIn          |  LogIn on error        |  SignIn on error
+LogIn            |  SignIn          |  Email/Password found in database        |  SignIn not valid / Already exist
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG" width="300" height="600"> |  <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/4.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/3.PNG" width="300" height="600">
 
