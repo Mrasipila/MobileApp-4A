@@ -15,9 +15,11 @@
             android:name=".presentation.main.ui.activityList.AppListActivity"
             android:parentActivityName=".presentation.main.ui.MainActivity" />
         <activity
+            android:windowSoftInputMode="adjustResize"
             android:name=".presentation.main.ui.CreateAccountActivity"
             android:parentActivityName=".presentation.main.ui.MainActivity" />
-        <activity android:name=".presentation.main.ui.MainActivity">
+        <activity android:name=".presentation.main.ui.MainActivity"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
