@@ -10,4 +10,8 @@
     <string name="enter_your_mail_address">Enter Your Mail Address</string>
     <string name="enter_your_password">Enter Your Password</string>
     <string name="crypto_image">crypto_image</string>
+    <string name="country">Country :</string>
+    <string name="titre">Titre</string>
+    <string name="text">text</string>
+    <string name="score">Score :</string>
 </resources>

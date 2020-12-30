@@ -2,16 +2,21 @@ package com.example.app4a.presentation.main.ui.activityList
 
 import com.example.app4a.R
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.app4a.domain.entities.Currency
+import com.example.app4a.presentation.main.ui.CreateAccountActivity
+import com.example.app4a.presentation.main.ui.EXTRA_MESSAGE
 import kotlinx.android.synthetic.main.unit_list_layout.*
+import org.w3c.dom.Text
 
 
 class MyAdapter     // Provide a suitable constructor (depends on the kind of dataset)
-(private val values: MutableList<String>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+(private val values: MutableList<Currency>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
@@ -19,16 +24,18 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
         // each data item is just a string in this case
         var txtHeader: TextView
         var txtFooter: TextView
+        var txtscore : TextView
         var layout: View
 
         init {
             layout = v
             txtHeader = v.findViewById(R.id.firstLine)
-            txtFooter = v.findViewById(R.id.secondLine)
+            txtFooter = v.findViewById(R.id.country_edit)
+            txtscore = v.findViewById(R.id.trust_score_edit)
         }
     }
 
-    fun add(position: Int, item: String) {
+    fun add(position: Int, item: Currency) {
         values.add(position, item)
         notifyItemInserted(position)
     }
@@ -55,17 +62,20 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         val name = values[position]
-        holder.txtHeader.text = name
+        holder.txtHeader.text = name.name
         holder.txtHeader.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 remove(position)
             }
         })
-        holder.txtFooter.text = "Footer: $name"
+        holder.txtFooter.text = name.country
+        holder.txtscore.text = name.trust_score.toString()
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount(): Int {
         return values.size
     }
+
+
 }

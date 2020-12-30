@@ -1,30 +1,56 @@
+package com.example.app4a.data.remote
+
+import androidx.lifecycle.MutableLiveData
+import com.example.app4a.domain.entities.Currency
+import com.example.app4a.presentation.main.buttonStatus.ApiStatus
 import com.google.gson.GsonBuilder
-import okhttp3.OkHttpClient
+import retrofit2.Call
+import retrofit2.Callback
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.concurrent.TimeUnit
 
-const val BASEURL = "pro-api.coinmarketcap.com"
+
+const val BASE_URL = "https://api.coingecko.com"
 
 class RetrofitClient {
-    companion object{
-        private var retrofit: Retrofit?=null
-        fun getApiClient(): Retrofit {
-            val gson = GsonBuilder()
-                .setLenient()
-                .create()
-            val okHttpClient = OkHttpClient.Builder()
-                .readTimeout(100, TimeUnit.SECONDS)
-                .connectTimeout(100, TimeUnit.SECONDS)
-                .build()
-            if (retrofit == null) {
-                retrofit = Retrofit.Builder()
-                    .baseUrl(BASEURL)
-                    .client(okHttpClient)
-                    .addConverterFactory(GsonConverterFactory.create(gson))
-                    .build()
-            }
-            return retrofit!!
-        }
+    var dataStatusApi: Boolean? = null
+    var fetchedData: List<Currency>? = null
+    var fetchedDataLiveData: MutableLiveData<ApiStatus> = MutableLiveData();
+    //var apiStatus: ApiStatus? = null
+
+    fun start(currCb : Callback<List<Currency>> ) {// Observable<List<Currency>> {
+        /* val interceptor = HttpLoggingInterceptor()
+        interceptor.level = HttpLoggingInterceptor.Level.BODY
+        val client = OkHttpClient.Builder().addInterceptor(interceptor).build()*/
+
+        val gson = GsonBuilder()
+            .setLenient()
+            .create()
+
+        val retrofit = Retrofit.Builder()
+            .baseUrl(BASE_URL)
+            //   .client(client)
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build()
+
+        val cryptocurrencyService: RetrofitHTTPRequest =
+            retrofit.create(RetrofitHTTPRequest::class.java)
+
+        val call: Call<List<Currency>> = cryptocurrencyService.fetchAllCurrency()
+        call.enqueue(currCb)
     }
 }
+
+/*
+    private fun handleResults(marketList: List<Currency>?) {
+        if (marketList != null && marketList.size != 0) {
+            fetchedData=marketList
+            dataStatusApi = true
+        } else {
+            dataStatusApi = false
+        }
+    }
+
+    private fun handleError(t: Throwable) {
+        dataStatusApi = false
+    }*/
