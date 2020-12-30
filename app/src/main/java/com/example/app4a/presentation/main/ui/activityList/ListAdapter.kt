@@ -6,8 +6,10 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.app4a.domain.entities.Currency
 import com.example.app4a.presentation.main.ui.CreateAccountActivity
 import com.example.app4a.presentation.main.ui.EXTRA_MESSAGE
@@ -25,6 +27,7 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
         var txtHeader: TextView
         var txtFooter: TextView
         var txtscore : TextView
+        var ImgIcon : ImageView
         var layout: View
 
         init {
@@ -32,6 +35,7 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
             txtHeader = v.findViewById(R.id.firstLine)
             txtFooter = v.findViewById(R.id.country_edit)
             txtscore = v.findViewById(R.id.trust_score_edit)
+            ImgIcon = v.findViewById(R.id.icon)
         }
     }
 
@@ -63,19 +67,18 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
         // - replace the contents of the view with that element
         val name = values[position]
         holder.txtHeader.text = name.name
-        holder.txtHeader.setOnClickListener(object : View.OnClickListener {
+        holder.itemView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 remove(position)
             }
         })
         holder.txtFooter.text = name.country
         holder.txtscore.text = name.trust_score.toString()
+        Glide.with(holder.ImgIcon.context).load(name.image).into(holder.ImgIcon);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     override fun getItemCount(): Int {
         return values.size
     }
-
-
 }
