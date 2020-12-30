@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:tag="activity_create_account_view"
+    android:id="@+id/app_list_activity"
     tools:context=".presentation.main.ui.activityList.AppListActivity">
     
     <androidx.recyclerview.widget.RecyclerView

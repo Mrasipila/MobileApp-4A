@@ -1,24 +1,22 @@
 package com.example.app4a.presentation.main.ui.activityList
 
-import com.example.app4a.R
 import android.annotation.SuppressLint
-import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.app4a.R
 import com.example.app4a.domain.entities.Currency
-import com.example.app4a.presentation.main.ui.CreateAccountActivity
-import com.example.app4a.presentation.main.ui.EXTRA_MESSAGE
-import kotlinx.android.synthetic.main.unit_list_layout.*
-import org.w3c.dom.Text
+import com.example.app4a.presentation.main.ui.activityList.fragment.ItemDetailFragment
 
 
 class MyAdapter     // Provide a suitable constructor (depends on the kind of dataset)
-(private val values: MutableList<Currency>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+    (private val values: MutableList<Currency>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
     // Provide a reference to the views for each data item
     // Complex data items may need more than one view per item, and
     // you provide access to all the views for a data item in a view holder
@@ -50,11 +48,14 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
     }
 
     // Create new views (invoked by the layout manager)
-    override fun onCreateViewHolder(parent: ViewGroup,
-                                    viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): ViewHolder {
         // create a new view
         val inflater = LayoutInflater.from(
-                parent.context)
+            parent.context
+        )
         val v: View = inflater.inflate(R.layout.unit_list_layout, parent, false)
         // set the view's size, margins, paddings and layout parameters
         return ViewHolder(v)
@@ -69,7 +70,16 @@ class MyAdapter     // Provide a suitable constructor (depends on the kind of da
         holder.txtHeader.text = name.name
         holder.itemView.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                remove(position)
+                val bundle = Bundle()
+                val activity = v!!.context as AppCompatActivity
+                val itemDetail = ItemDetailFragment()
+                bundle.putString("desc", name.toString())
+                activity.supportFragmentManager
+                    .beginTransaction()
+                    .replace(R.id.app_list_activity, itemDetail)
+                    .addToBackStack(null)
+                    .commit()
+                itemDetail.arguments=bundle
             }
         })
         holder.txtFooter.text = name.country

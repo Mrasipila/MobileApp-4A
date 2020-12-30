@@ -14,4 +14,13 @@
     <string name="titre">Titre</string>
     <string name="text">text</string>
     <string name="score">Score :</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="imagecryptocurr">ImageCryptoCurr</string>
+    <string name="textview">TextView</string>
+    <string name="trust_score">trust score :</string>
+    <string name="trading_incentive">trading_incentive :</string>
+    <string name="trade_volume_24h_btc">trade_volume_24h_btc :</string>
+    <string name="trade_volume_24h_btc_normalized">trade_volume_24h_btc_normalized :</string>
+    <string name="value">VALUE</string>
 </resources>
