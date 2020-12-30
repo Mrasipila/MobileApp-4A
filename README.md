@@ -8,10 +8,9 @@ Clean Architecture
 API call  
 Database management  
 
-![alt text]()
-<p align="center">
-  <img width="460" height="300" src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG">
-</p>
+Solarized dark             |  Solarized Ocean
+:-------------------------:|:-------------------------:
+![](https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG)  |  ![](https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG)
 
 ## Built With
 
