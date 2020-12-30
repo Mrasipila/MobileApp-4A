@@ -81,7 +81,7 @@ class ItemDetailFragment : Fragment() {
         tv3.text=list.get(7).replace( " trust_score=","")
         tv4.text=list.get(6).replace( " has_trading_incentive=","")
         tv5.text=list.get(9).replace( " trade_volume_24h_btc=","")
-        tv6.text=list.get(10).replace( " trade_volume_24h_btc_normalized=","")
+        tv6.text=list.get(10).replace( " trade_volume_24h_btc_normalized=","").replace( "}","")
         Glide.with(iv0.context).load(list.get(5).replace( " image=","")).into(iv0)
         return inf
     }
