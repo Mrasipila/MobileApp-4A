@@ -3,6 +3,13 @@
 Voici une application mobile avec une interface de connection, création de compte qui permet de voir les valeurs des index de différentes  
 cryptomonnaies en temps réelle. 
 
+L'utilisateur de base avec lequelle vous pouvez vous connecter à l'appli est :  
+Email : **admin@admin.ad**  
+Mot de passe : **Admin123**  
+  
+    
+     
+# Le projet respecte les principes et utilise :  
 **1. Architecture MVVM**  
 **2. Clean Architecture**  
 **3. API call**  
@@ -12,7 +19,7 @@ LogIn            |  SignIn          |  Email/Password not found in database     
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/1.PNG" width="300" height="550"> |  <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/2.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/4.PNG" width="300" height="550"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/3.PNG" width="300" height="550">
 
-Once Connected         |  On Click          |  On Clic       
+Once Connected         |  On Click          |  On Click       
 :-------------------------:|:-------------------------:|:-------------------------:
 <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/5.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/6.PNG" width="300" height="600"> | <img src="https://github.com/Mrasipila/MobileApp-4A/blob/master/images/7.PNG" width="300" height="600">
 
@@ -32,20 +39,17 @@ Once Connected         |  On Click          |  On Clic
 * [Gradle](https://gradle.org/) - Dependency Management
 * [AndroidStudio](https://developer.android.com/) - System software
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Versioning
 
-J'ai utilisé [Github](https://github.com/) pour le versioning. Pour voir les différentes versions [cliquez sur ce repertoire](https://github.com/Mrasipila/MobileApp-4A/branches). 
+J'ai utilisé [Github](https://github.com/) pour le versioning. Pour voir les différentes branches et versions [cliquez sur ce repertoire](https://github.com/Mrasipila/MobileApp-4A/branches). 
 
-## Authors
+## Author
 
 * **KANZARI Meyssan** 
 
 
-## Acknowledgments
+## Acknowledgment
 
 vincent Etienne
 
