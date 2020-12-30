@@ -42,7 +42,7 @@ Once Connected         |  On Click          |  On Click
 
 ## Versioning
 
-J'ai utilisé [Github](https://github.com/) pour le versioning. Pour voir les différentes versions [cliquez sur ce repertoire](https://github.com/Mrasipila/MobileApp-4A/branches). 
+J'ai utilisé [Github](https://github.com/) pour le versioning. Pour voir les différentes branches et versions [cliquez sur ce repertoire](https://github.com/Mrasipila/MobileApp-4A/branches). 
 
 ## Authors
 
